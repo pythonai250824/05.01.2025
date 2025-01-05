@@ -1,5 +1,6 @@
 
 game = {
+    'player1': 'name',
     'board': [
         ['_', '_', 'O'],
         ['X', 'O', 'O'],
