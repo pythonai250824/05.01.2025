@@ -1,5 +1,7 @@
 
+turn = 1 # BAD
 game = {
+    'turn': 1, # GOOD
     'player1': 'name',
     'board': [
         ['_', '_', 'O'],
