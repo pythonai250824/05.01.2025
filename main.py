@@ -82,10 +82,3 @@ for row in rows:
 
 conn.close()
 
-# -- targil
-# select
-# create table
-# update
-# insert
-# delete
-
