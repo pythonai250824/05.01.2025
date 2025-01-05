@@ -58,7 +58,24 @@ def check_win(my_board: list, search: str):
 x_won = check_win(game['board'], 'X')
 o_won = check_win(game['board'], 'O')
 
-input_row = int(input('row?'))
-input_col = int(input('col?'))
-game['board'][input_row][input_col] = 'X'
+def is_full(my_board):
+    for row in range(0, 2 + 1):
+        for col in range(0, 2 + 1):
+            if my_board[row][col] != '_':
+                return False
+    return True
+
+while not is_full(game['board']):
+    input_row = int(input('row?'))
+    input_col = int(input('col?'))
+    # check if number and between 0-2
+
+    # check if empty
+    if game['board'][input_row][input_col] == '_':
+        game['board'][input_row][input_col] = 'X'
+        break
+    print('this square is not empty ...')
+
 print(game['board'])
+
+
